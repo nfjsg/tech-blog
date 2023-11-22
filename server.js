@@ -23,7 +23,8 @@ const sessionStore = new SequelizeStore({
 // Session setup
 app.use(
   session({
-    secret: 'your-secret-key',
+    secret: 'b8a37df3e6e8a04e3bd93e7a2f3f072a532a8d23c13e5a109d59eab5a8f41455
+',
     resave: false,
     saveUninitialized: true,
     store: sessionStore,
