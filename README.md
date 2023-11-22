@@ -21,14 +21,19 @@ Tech Blog is a CMS-style blog site where developers can publish articles, blog p
    ```bash
    git clone https://github.com/your-username/tech-blog.git
 2. Navigate to the project's root directory:
+   ```bash
    cd tech-blog
-3. Install dependencies:
+4. Install dependencies:
+   ```bash
    npm install
-4. Run the database migrations:
+6. Run the database migrations:
+   ```bash
    npm run migrate
-5. Start the application:
+8. Start the application:
+   ```bash
    npm start
-6. Open your browser and go to http://localhost:3001.
+10. Open your browser and go to [http://localhost:3001](http://localhost:3001).
+
 
 
 ## Usage
