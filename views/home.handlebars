@@ -1,1 +1,11 @@
 
+{{#each posts}}
+  <div>
+    <h2>{{title}}</h2>
+    <p>{{content}}</p>
+    <p>By {{user.username}} on {{createdAt}}</p>
+    {{#each comments}}
+      <p>{{text}} - {{user.username}}</p>
+    {{/each}}
+  </div>
+{{/each}}
