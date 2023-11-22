@@ -1,1 +1,41 @@
+# .gitignore
+
+# Node.js dependencies
+node_modules/
+
+# Environment variables file
+.env
+
+# Generated files
+.DS_Store
+dist/
+build/
+coverage/
+
+# Logs
+logs/
+*.log
+
+# Dependency directories
+.idea/
+.vscode/
+
+# Environment-specific files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore system junk, backups, and hidden files
+Thumbs.db
+ehthumbs.db/
+Desktop.ini
+$RECYCLE.BIN/
+.Spotlight_V100/
+.Trashes/
+Icon?
+ehthumbs.db
+.DS_Store
+.AppleDouble/
+._*
 
