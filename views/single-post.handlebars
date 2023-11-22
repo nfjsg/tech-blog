@@ -1,1 +1,33 @@
+<div class="post">
+  <h2>{{post.title}}</h2>
+  <p>{{post.content}}</p>
+  <p>Posted by {{post.user.username}} on {{formatDate post.createdAt}}</p>
+</div>
+
+{{#if isAuthenticated}}
+  <section class="new-comment">
+    <h3>Add a Comment:</h3>
+
+    <form action="/comments/{{post.id}}" method="POST">
+      <label for="comment">Your Comment:</label>
+      <textarea id="comment" name="text" rows="4" required></textarea>
+
+      <button type="submit">Submit Comment</button>
+    </form>
+  </section>
+{{else}}
+  <p>You must be logged in to leave a comment.</p>
+{{/if}}
+
+{{#if post.comments.length}}
+  <section class="comments">
+    <h3>Comments:</h3>
+
+    {{#each post.comments}}
+      {{> comment comments=[this]}}
+    {{/each}}
+  </section>
+{{else}}
+  <p>No comments yet. Be the first to comment!</p>
+{{/if}}
 
